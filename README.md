@@ -36,7 +36,7 @@ To enable mocha variables support:
 
 ## React
 
-- [eslint-config-cusxio-react](https://cusxio/eslint-config-cusxio-react)
+- [eslint-config-cusxio-react](https://github.com/cusxio/eslint-config-cusxio-react)
 
 ## License
 
