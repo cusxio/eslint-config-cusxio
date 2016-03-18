@@ -1,0 +1,29 @@
+{
+  "name": "eslint-config-cusxio",
+  "version": "0.0.1",
+  "description": "ESLint shareable config for cusxio",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cusxio/eslint-config-cusxio.git"
+  },
+  "author": "Jonathan Chan",
+  "files": [
+    "index.js",
+    "mocha.js",
+    "browser.js"
+  ],
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "eslint",
+    "eslintconfig"
+  ],
+  "dependencies": {
+    "eslint-plugin-babel": "^3.1.0",
+    "babel-eslint": "^6.0.0-beta.6",
+    "eslint-plugin-no-empty-blocks": "0.0.2",
+    "eslint-plugin-no-use-extend-native": "^0.3.4"
+  }
+}
