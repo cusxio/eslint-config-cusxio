@@ -102,7 +102,12 @@ module.exports = {
         'no-sequences': 2,
         'no-throw-literal': 2,
         'no-unmodified-loop-condition': 2,
-        'no-unused-expressions': 2,
+        'no-unused-expressions': [
+            2, { 
+                allowShortCircuit: true, 
+                allowTernary: true 
+            }
+        ],
         'no-unused-labels': 2,
         'no-useless-call': 2,
         'no-useless-concat': 2,
