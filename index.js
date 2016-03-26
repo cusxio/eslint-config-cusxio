@@ -18,11 +18,13 @@ module.exports = {
         'no-empty-blocks',
         'no-use-extend-native',
         'babel',
+        'import-order',
     ],
     rules: {
         'no-empty-blocks/no-empty-blocks': [2, 'allowCatch'],
-        'babel/object-curly-spacing': [2, 'always'],
         'no-use-extend-native/no-use-extend-native': 2,
+        'babel/object-curly-spacing': [2, 'always'],
+        'import-order/import-order': 2,
         'comma-dangle': [
             2,
             'always-multiline'
