@@ -24,6 +24,8 @@ module.exports = {
         'no-empty-blocks/no-empty-blocks': [2, 'allowCatch'],
         'no-use-extend-native/no-use-extend-native': 2,
         'babel/object-curly-spacing': [2, 'always'],
+        'babel/arrow-parens': [2, 'as-needed'],
+        'babel/generator-star-spacing': [2, 'before'],
         'import-order/import-order': 2,
         'comma-dangle': [
             2,
@@ -243,10 +245,7 @@ module.exports = {
         'no-spaced-func': 2,
         'no-trailing-spaces': 2,
         'no-unneeded-ternary': 2,
-        'object-curly-spacing': [
-            2,
-            'always'
-        ],
+        'object-curly-spacing': 0,
         'one-var': [
             2,
             'never'
@@ -302,10 +301,7 @@ module.exports = {
                 ]
             }
         ],
-        'arrow-parens': [
-            2,
-            'as-needed'
-        ],
+        'arrow-parens': 0,
         'arrow-spacing': [
             2, {
                 before: true,
@@ -313,10 +309,7 @@ module.exports = {
             }
         ],
         'constructor-super': 2,
-        'generator-star-spacing': [
-            2,
-            'both'
-        ],
+        'generator-star-spacing': 0,
         'no-class-assign': 2,
         'no-const-assign': 2,
         'no-dupe-class-members': 2,
