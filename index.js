@@ -98,7 +98,7 @@ module.exports = {
         'no-redeclare': 2,
         'no-return-assign': [
             2,
-            'always'
+            'except-parens'
         ],
         'no-script-url': 2,
         'no-self-assign': 2,
