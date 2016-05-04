@@ -39,7 +39,7 @@ module.exports = {
         'import/named': 0,
         'import/namespace': 0,
         'import/no-extraneous-dependencies': [
-            2, {
+            0, {
                 devDependencies: false
             }
         ],
