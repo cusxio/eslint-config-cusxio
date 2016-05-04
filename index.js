@@ -10,6 +10,13 @@ module.exports = {
             experimentalObjectRestSpread: true
         }
     },
+    settings: {
+        'import/resolver': {
+            node: {
+                extensions: ['.js', '.json']
+            }
+        }
+    },
     env: {
         node: true,
         es6: true,
@@ -18,7 +25,7 @@ module.exports = {
         'no-empty-blocks',
         'no-use-extend-native',
         'babel',
-        'import-order',
+        'import',
     ],
     rules: {
         'no-empty-blocks/no-empty-blocks': [2, 'allowCatch'],
@@ -26,7 +33,33 @@ module.exports = {
         'babel/object-curly-spacing': [2, 'always'],
         'babel/arrow-parens': [2, 'as-needed'],
         'babel/generator-star-spacing': [2, 'before'],
-        'import-order/import-order': 2,
+        'import/export': 2,
+        'import/default': 0,
+        'import/extensions': [0, 'never'],
+        'import/named': 0,
+        'import/namespace': 0,
+        'import/no-extraneous-dependencies': [
+            2, {
+                devDependencies: false
+            }
+        ],
+        'import/no-unresolved': [
+            2, {
+                commonjs: true
+            }
+        ],
+        'import/no-named-as-default': 2,
+        'import/no-commonjs': 0,
+        'import/no-amd': 0,
+        'import/imports-first': [2, 'absolute-first'],
+        'import/no-duplicates': 2,
+        'import/no-deprecated': 0,
+        'import/no-namespace': 0,
+        'import/no-named-as-default-member': 0,
+        'import/no-nodejs-modules': 0,
+        'import/order': [2, {
+            groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
+        }],
         'comma-dangle': [
             2,
             'always-multiline'
@@ -107,9 +140,9 @@ module.exports = {
         'no-throw-literal': 2,
         'no-unmodified-loop-condition': 2,
         'no-unused-expressions': [
-            2, { 
-                allowShortCircuit: true, 
-                allowTernary: true 
+            2, {
+                allowShortCircuit: true,
+                allowTernary: true
             }
         ],
         'no-unused-labels': 2,
@@ -319,7 +352,7 @@ module.exports = {
         'template-curly-spacing': 2,
         'yield-star-spacing': [
             2,
-            'both'
+            'after'
         ]
     }
 };
