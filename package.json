@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-cusxio",
-  "version": "0.0.8",
+  "version": "0.1.0",
   "description": "ESLint shareable config for cusxio",
   "license": "MIT",
   "repository": {
@@ -20,14 +20,6 @@
     "eslint",
     "eslintconfig"
   ],
-  "devDependencies": {
-    "eslint": "^2.9.0",
-    "eslint-plugin-import": "^1.6.1",
-    "babel-eslint": "^6.0.4",
-    "eslint-plugin-babel": "^3.2.0",
-    "eslint-plugin-no-empty-blocks": "0.0.2",
-    "eslint-plugin-no-use-extend-native": "^0.3.7"
-  },
   "devDependencies": {
     "eslint": "^2.9.0",
     "eslint-plugin-import": "^1.6.1",
