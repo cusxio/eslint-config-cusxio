@@ -21,19 +21,15 @@
     "eslintconfig"
   ],
   "devDependencies": {
-    "eslint": "^2.9.0",
+    "eslint": "^3.0.1",
     "eslint-plugin-import": "^1.6.1",
     "babel-eslint": "^6.0.4",
-    "eslint-plugin-babel": "^3.2.0",
-    "eslint-plugin-no-empty-blocks": "0.0.2",
-    "eslint-plugin-no-use-extend-native": "^0.3.7"
+    "eslint-plugin-babel": "^3.2.0"
   },
   "peerDependencies": {
-    "eslint": "^2.9.0",
+    "eslint": "^3.0.1",
     "eslint-plugin-import": "^1.6.1",
     "babel-eslint": "^6.0.4",
-    "eslint-plugin-babel": "^3.2.0",
-    "eslint-plugin-no-empty-blocks": "0.0.2",
-    "eslint-plugin-no-use-extend-native": "^0.3.7"
+    "eslint-plugin-babel": "^3.2.0"
   }
 }

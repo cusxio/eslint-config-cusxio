@@ -15,23 +15,22 @@ module.exports = {
             node: {
                 extensions: ['.js', '.json']
             }
-        }
+        },
+        'import/extensions': [
+            'node_modules',
+        ],
     },
     env: {
         node: true,
         es6: true,
     },
     plugins: [
-        'no-empty-blocks',
-        'no-use-extend-native',
         'babel',
         'import',
     ],
     rules: {
-        'no-empty-blocks/no-empty-blocks': [2, 'allowCatch'],
-        'no-use-extend-native/no-use-extend-native': 2,
         'babel/object-curly-spacing': [2, 'always'],
-        'babel/arrow-parens': [2, 'as-needed'],
+        'babel/arrow-parens': [2, 'always'],
         'babel/generator-star-spacing': [2, 'before'],
         'import/export': 2,
         'import/default': 0,
@@ -72,6 +71,9 @@ module.exports = {
         'no-dupe-keys': 2,
         'no-duplicate-case': 2,
         'no-empty-character-class': 2,
+        'no-empty': [2, {
+            allowEmptyCatch: true
+        }],
         'no-ex-assign': 2,
         'no-extra-boolean-cast': 2,
         'no-extra-semi': 2,
