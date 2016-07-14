@@ -1,6 +1,6 @@
 {
   "name": "eslint-config-cusxio",
-  "version": "0.1.3",
+  "version": "0.2.0",
   "description": "ESLint shareable config for cusxio",
   "license": "MIT",
   "repository": {
