@@ -1,37 +1,28 @@
 'use strict';
 
 module.exports = {
-    parser: 'babel-eslint',
     parserOptions: {
         ecmaVersion: 7,
         sourceType: 'module',
         ecmaFeatures: {
             jsx: true,
-            experimentalObjectRestSpread: true
-        }
+            experimentalObjectRestSpread: true,
+        },
     },
     settings: {
         'import/resolver': {
             node: {
-                extensions: ['.js', '.json']
-            }
+                extensions: ['.js', '.json'],
+            },
         },
-        'import/extensions': [
-            'node_modules',
-        ],
+        'import/extensions': ['node_modules'],
     },
     env: {
         node: true,
         es6: true,
     },
-    plugins: [
-        'babel',
-        'import',
-    ],
+    plugins: ['import'],
     rules: {
-        'babel/object-curly-spacing': [2, 'always'],
-        'babel/arrow-parens': [2, 'always'],
-        'babel/generator-star-spacing': [2, 'before'],
         'import/export': 2,
         'import/default': 0,
         'import/extensions': [0, 'never'],
@@ -39,30 +30,36 @@ module.exports = {
         'import/namespace': 0,
         'import/no-extraneous-dependencies': [
             0, {
-                devDependencies: false
-            }
+                devDependencies: false,
+            },
         ],
         'import/no-unresolved': [
             2, {
-                commonjs: true
-            }
+                commonjs: true,
+            },
         ],
         'import/no-named-as-default': 2,
         'import/no-commonjs': 0,
         'import/no-amd': 0,
-        'import/imports-first': [2, 'absolute-first'],
+        'import/first': [2, 'absolute-first'],
         'import/no-duplicates': 2,
         'import/no-deprecated': 0,
         'import/no-namespace': 0,
         'import/no-named-as-default-member': 0,
         'import/no-nodejs-modules': 0,
-        'import/order': [2, {
-            groups: ['builtin', 'external', 'internal', 'parent', 'sibling', 'index'],
-        }],
-        'comma-dangle': [
-            2,
-            'always-multiline'
+        'import/order': [
+            2, {
+                groups: [
+                    'builtin',
+                    'external',
+                    'internal',
+                    'parent',
+                    'sibling',
+                    'index',
+                ],
+            },
         ],
+        'comma-dangle': [2, 'always-multiline'],
         'no-cond-assign': 2,
         'no-constant-condition': 2,
         'no-control-regex': 2,
@@ -71,9 +68,11 @@ module.exports = {
         'no-dupe-keys': 2,
         'no-duplicate-case': 2,
         'no-empty-character-class': 2,
-        'no-empty': [2, {
-            allowEmptyCatch: true
-        }],
+        'no-empty': [
+            2, {
+                allowEmptyCatch: true,
+            },
+        ],
         'no-ex-assign': 2,
         'no-extra-boolean-cast': 2,
         'no-extra-semi': 2,
@@ -95,10 +94,7 @@ module.exports = {
         'curly': 2,
         'default-case': 2,
         'dot-notation': 2,
-        'dot-location': [
-            2,
-            'property'
-        ],
+        'dot-location': [2, 'property'],
         'eqeqeq': 2,
         'guard-for-in': 2,
         'no-alert': 2,
@@ -131,10 +127,7 @@ module.exports = {
         'no-octal': 2,
         'no-proto': 2,
         'no-redeclare': 2,
-        'no-return-assign': [
-            2,
-            'except-parens'
-        ],
+        'no-return-assign': [2, 'except-parens'],
         'no-script-url': 2,
         'no-self-assign': 2,
         'no-self-compare': 2,
@@ -144,8 +137,8 @@ module.exports = {
         'no-unused-expressions': [
             2, {
                 allowShortCircuit: true,
-                allowTernary: true
-            }
+                allowTernary: true,
+            },
         ],
         'no-unused-labels': 2,
         'no-useless-call': 2,
@@ -154,35 +147,26 @@ module.exports = {
         'no-warning-comments': 1,
         'no-with': 2,
         'radix': 2,
-        'wrap-iife': [
-            2,
-            'inside'
-        ],
+        'wrap-iife': [2, 'inside'],
         'yoda': 2,
         'no-delete-var': 2,
         'no-label-var': 2,
-        'no-restricted-globals': [
-            2,
-            'event'
-        ],
+        'no-restricted-globals': [2, 'event'],
         'no-shadow-restricted-names': 2,
         'no-undef-init': 2,
         'no-undef': [
             2, {
-                typeof: true
-            }
+                typeof: true,
+            },
         ],
         'no-unused-vars': 2,
-        'no-use-before-define': [
-            2,
-            'nofunc'
-        ],
+        'no-use-before-define': [2, 'nofunc'],
         'handle-callback-err': 1,
         'no-mixed-requires': [
             2, {
                 grouping: true,
-                allowCall: true
-            }
+                allowCall: true,
+            },
         ],
         'no-new-require': 2,
         'no-path-concat': 2,
@@ -192,7 +176,7 @@ module.exports = {
             'freelist',
             'smalloc',
             'sys',
-            'colors'
+            'colors',
         ],
         'no-restricted-modules': [
             2,
@@ -200,65 +184,50 @@ module.exports = {
             'freelist',
             'smalloc',
             'sys',
-            'colors'
+            'colors',
         ],
-        'array-bracket-spacing': [
-            2,
-            'never'
-        ],
+        'array-bracket-spacing': [2, 'never'],
         'brace-style': [
             2,
             '1tbs', {
-                'allowSingleLine': false
-            }
+                'allowSingleLine': false,
+            },
         ],
         'camelcase': [
             2, {
-                properties: 'never'
-            }
+                properties: 'never',
+            },
         ],
         'comma-spacing': [
             2, {
                 before: false,
-                after: true
-            }
+                after: true,
+            },
         ],
-        'comma-style': [
-            2,
-            'last'
-        ],
-        'computed-property-spacing': [
-            2,
-            'never'
-        ],
+        'comma-style': [2, 'last'],
+        'computed-property-spacing': [2, 'never'],
         'eol-last': 2,
         'indent': [
             2,
             4, {
-                SwitchCase: 1
-            }
+                SwitchCase: 1,
+            },
         ],
         'jsx-quotes': 2,
         'key-spacing': [
             2, {
                 beforeColon: false,
-                afterColon: true
-            }
+                afterColon: true,
+            },
         ],
         'keyword-spacing': 2,
-        'linebreak-style': [
-            2,
-            'unix'
-        ],
-        'max-nested-callbacks': [
-            1,
-            4
-        ],
+        'linebreak-style': [2, 'unix'],
+        'max-nested-callbacks': [1, 4],
         'new-cap': [
             2, {
                 newIsCap: true,
-                capIsNew: true
-            }
+                capIsNew: true,
+            },
         ],
         'new-parens': 2,
         'no-array-constructor': 2,
@@ -266,85 +235,56 @@ module.exports = {
         'no-mixed-spaces-and-tabs': 2,
         'no-multiple-empty-lines': [
             2, {
-                max: 1
-            }
+                max: 1,
+            },
         ],
         'no-nested-ternary': 1,
         'no-negated-condition': 2,
         'no-new-object': 2,
-        'no-restricted-syntax': [
-            2,
-            'WithStatement'
-        ],
+        'no-restricted-syntax': [2, 'WithStatement'],
         'no-whitespace-before-property': 2,
         'no-spaced-func': 2,
         'no-trailing-spaces': 2,
         'no-unneeded-ternary': 2,
-        'object-curly-spacing': 0,
-        'one-var': [
-            2,
-            'never'
-        ],
+        'object-curly-spacing': [2, 'always'],
+        'one-var': [2, 'never'],
         'one-var-declaration-per-line': 2,
-        'operator-assignment': [
-            2,
-            'always'
-        ],
-        'operator-linebreak': [
-            2,
-            'after'
-        ],
-        'padded-blocks': [
-            2,
-            'never'
-        ],
-        'quote-props': [
-            2,
-            'consistent-as-needed'
-        ],
-        'semi-spacing': [
+        'operator-assignment': [2, 'always'],
+        'operator-linebreak': [2, 'after'],
+        'padded-blocks': [2, 'never'],
+        'quote-props': [2, 'consistent-as-needed'],
+        'semi - spacing': [
             2, {
                 before: false,
-                after: true
-            }
+                after: true,
+            },
         ],
-        'semi': [
-            2,
-            'always'
-        ],
-        'space-before-blocks': [
-            2,
-            'always'
-        ],
+        'semi': [2, 'always'],
+        'space-before-blocks': [2, 'always'],
         'space-before-function-paren': [
             2, {
                 anonymous: 'always',
-                named: 'never'
-            }
+                named: 'never',
+            },
         ],
-        'space-in-parens': [
-            2,
-            'never'
-        ],
+        'space-in-parens': [2, 'never'],
         'space-infix-ops': 2,
         'space-unary-ops': 2,
         'spaced-comment': [
             2,
             'always', {
-                markers: [
-                    '!'
-                ]
-            }
+                markers: ['!'],
+            },
         ],
-        'arrow-parens': 0,
+        'arrow-parens': [2, 'always'],
         'arrow-spacing': [
             2, {
                 before: true,
-                after: true
-            }
+                after: true,
+            },
         ],
         'constructor-super': 2,
-        'generator-star-spacing': 0,
+        'generator-star-spacing': [2, 'before'],
         'no-class-assign': 2,
         'no-const-assign': 2,
         'no-dupe-class-members': 2,
@@ -352,9 +292,6 @@ module.exports = {
         'no-this-before-super': 2,
         'no-useless-constructor': 2,
         'template-curly-spacing': 2,
-        'yield-star-spacing': [
-            2,
-            'after'
-        ]
-    }
+        'yield-star-spacing': [2, 'after'],
+    },
 };
