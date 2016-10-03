@@ -253,7 +253,7 @@ module.exports = {
         'operator-linebreak': [2, 'after'],
         'padded-blocks': [2, 'never'],
         'quote-props': [2, 'consistent-as-needed'],
-        'semi - spacing': [
+        'semi-spacing': [
             2, {
                 before: false,
                 after: true,
