@@ -165,6 +165,7 @@ module.exports = {
             },
         ],
         'no-return-assign': [2, 'except-parens'],
+        'no-return-await': 2,
         'no-script-url': 2,
         'no-self-assign': 2,
         'no-self-compare': 2,
@@ -186,6 +187,7 @@ module.exports = {
         'no-warning-comments': 1,
         'no-with': 2,
         'radix': 2,
+        'require-await': 2,
         'vars-on-top': 2,
         'wrap-iife': [2, 'inside'],
         'yoda': 2,
@@ -487,7 +489,8 @@ module.exports = {
         'prefer-reflect': 0,
         'prefer-rest-params': 2,
         'prefer-spread': 2,
-        'prefer-template': 2,
+        // https://github.com/eslint/eslint/issues/6572
+        'prefer-template': 0,
         'require-yield': 2,
         'rest-spread-spacing': [
             2, 'never',
