@@ -15,7 +15,12 @@ module.exports = {
                 extensions: ['.js', '.json'],
             },
         },
-        'import/extensions': ['node_modules'],
+        'import/extensions': [
+            '.js',
+        ],
+        'import/ignore': [
+            'node_modules', '\\.(coffee|scss|css|less|hbs|svg|json)$',
+        ],
     },
     env: {
         node: true,
@@ -23,33 +28,47 @@ module.exports = {
     },
     plugins: ['import'],
     rules: {
-        'import/export': 2,
         'import/default': 0,
-        'import/extensions': [0, 'never'],
+        'import/export': 2,
+        'import/extensions': [2, 'always', {
+            js: 'never',
+            jsx: 'never',
+        }],
+        'import/first': [2, 'absolute-first'],
+        'import/max-dependencies': 0,
         'import/named': 0,
         'import/namespace': 0,
+        'import/newline-after-import': 2,
+        'import/no-absolute-path': 2,
+        'import/no-amd': 0,
+        'import/no-commonjs': 0,
+        'import/no-deprecated': 0,
+        'import/no-duplicates': 2,
+        'import/no-dynamic-require': 0,
         'import/no-extraneous-dependencies': [
             0, {
                 devDependencies: false,
             },
         ],
+        'import/no-internal-modules': 0,
+        'import/no-mutable-exports': 2,
+        'import/no-named-as-default-member': 0,
+        'import/no-named-as-default': 2,
+        'import/no-named-default': 2,
+        'import/no-namespace': 0,
+        'import/no-nodejs-modules': 0,
+        'import/no-restricted-paths': 0,
+        'import/no-unassigned-import': 0,
         'import/no-unresolved': [
             2, {
                 commonjs: true,
+                caseSensitive: true,
             },
         ],
-        'import/no-named-as-default': 2,
-        'import/no-commonjs': 0,
-        'import/no-amd': 0,
-        'import/first': [2, 'absolute-first'],
-        'import/no-duplicates': 2,
-        'import/no-deprecated': 0,
-        'import/no-namespace': 0,
-        'import/no-named-as-default-member': 0,
-        'import/no-nodejs-modules': 0,
+        'import/no-webpack-loader-syntax': 0,
         'import/order': [
             2, {
-                groups: [
+                'groups': [
                     'builtin',
                     'external',
                     'internal',
@@ -57,8 +76,12 @@ module.exports = {
                     'sibling',
                     'index',
                 ],
+                'newlines-between': 'ignore',
             },
         ],
+        'import/prefer-default-export': 2,
+        'import/unambiguous': 0,
+
         // Possible Errors
         'no-cond-assign': 2,
         'no-constant-condition': 2,
